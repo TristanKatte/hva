@@ -21,7 +21,7 @@ const vertexShader = `
 
   void main() {    
     vec3 pos = position;
-    float wave = sin(pos.x * 1.1 + uTime) * cos(pos.y * 1.2 + uTime);
+    float wave = sin(pos.x * 1.7 + uTime) * cos(pos.y * 2.2 + uTime);
     pos.z += wave;
 
     gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
